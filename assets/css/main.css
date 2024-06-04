@@ -1,0 +1,117 @@
+:root {
+    --bs-font-sans-serif: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --swiper-theme-color: var(--bs-primary);
+    --swiper-pagination-bullet-inactive-color: var(--bs-primary);
+    --swiper-pagination-bullet-size: 1rem;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    --swiper-pagination-bullet-size: 1.25rem;
+}
+
+.icon {
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    color: currentColor;
+}
+
+a {
+    text-underline-offset: 0.25em;
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+.my-100 {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.mb-32 {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    --bs-btn-line-height: 1;
+    font-weight: 700;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-active-color: var(--bs-white);
+    --bs-btn-disabled-color: var(--bs-white);
+}
+
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--bs-white);
+}
+
+.navbar-nav {
+    font-weight: 700;
+}
+
+.first-section {
+    position: relative;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.first-section::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 680px;
+    content: "";
+    background-image: url("../images/first-block-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.link-white {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.accordion .accordion-item {
+    border-radius: var(--bs-accordion-border-radius);
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+
+.accordion .accordion-item .accordion-button {
+    border-radius: var(--bs-accordion-border-radius);
+    box-shadow: none;
+}
+
+@media (min-width: 992px){
+    .navbar-nav {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .first-section .block-title {
+        font-size: 3.5rem;
+    }
+}
